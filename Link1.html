@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Link 1</title>
+        <style>
+            body{
+                background-image:url(../assets/l1.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            header{
+                background-color: yellow;
+                width:150px;
+            }
+            section{
+           display: flex;
+           justify-content: space-around;
+           text-align: center;
+           margin: 2px;
+         
+        }
+       
+       #content{
+        flex-grow: 3;
+        height: 300px;
+        width: 500px;
+        background-image: url('../assets/l2.jpg');
+        background-size:cover;
+        color:aliceblue;
+        background-repeat: no-repeat;
+        text-align:center ;
+       }
+       .title{
+        text-align: center;
+        flex-grow: 1;
+        margin-left:300PX ;
+        justify-content: center;
+        height: 60px;
+        width:150px;
+        
+        background-color: rgb(239, 239, 9);
+        color: black;
+       }
+       .title>h1{
+        text-align: center;
+        background-color: rgb(239, 239, 9);
+       }
+       .item-title>p{
+        text-align: center;
+       }
+       #content2{
+        margin:5px;
+        flex-grow: 2;
+       }
+       #container{
+        display: flex;
+        flex-direction: column;
+       height: 300px;
+      
+       }
+       #box1{
+        flex-grow: 3;
+        text-align: center;
+        margin-bottom: 5px;
+        background-color: rgb(247, 247, 20);
+        color:black;
+       }
+       #box2{
+        flex-grow: 3;
+        
+        background-color: rgb(247, 247, 20);
+       text-align: center;
+        margin-bottom: 5px;
+        color:black;
+       }
+       nav{
+            display: flex;
+            justify-content: space-around;
+            
+            
+        }
+        nav>div{
+          
+           margin: 5px;
+           text-align: center;
+          background-color: white;
+        }
+        nav>div:hover{
+            background-color: rgb(102, 100, 100);
+            color: white;
+        }
+        main{
+               
+               display: flex;
+              
+               justify-content: space-between;
+               flex-grow: 1;
+               background-color: gray;
+            }
+       
+            main>div{
+               justify-content:space-around ;
+               background-color: rgb(241, 151, 182);
+               padding: 10px;
+               margin: 10px;
+              
+            }
+            #banner{
+                display: flex;
+                justify-content: space-around;
+                background-color: white;
+               
+                padding: 10px;
+                border: 1px solid;
+                margin:10px;
+            }
+            #detail{
+                flex-direction: row;
+            }
+            #name{
+        text-align: center;
+       background-color: goldenrod;
+        margin-bottom: 10px;
+       
+       }
+        #games{
+            text-align: center;
+            
+           padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            flex-grow: 5;
+            flex-direction:row;
+            
+            
+        }
+       
+        #games>div{
+           height: 150px;
+           width:200px;
+            
+            
+        }
+        #img1{
+            background-image: url('../assets/f1.jpg');
+           
+            background-repeat: no-repeat;
+        }
+        #img2{
+            background-image: url('../assets/f3.jpg');
+           
+            background-repeat: no-repeat;
+        }
+        #img3{
+            background-image: url('../assets/f2.jpg');
+            ;
+            background-repeat: no-repeat;
+        }
+        #img4{
+            background-image: url('../assets/f4.jpg');
+            
+            background-repeat: no-repeat;
+        }
+        #img5{
+            background-image: url('../assets/f5.jpg');
+            
+            background-repeat: no-repeat;
+        }
+        </style>
+    </head>
+    <body>
+       <header>
+       <h2>☰ Menu</h2>
+       </header>
+        <section>
+            <div id="content">
+                <h1 class="title">Terry's Taco joint</h1>
+                    <p class="title">Pretty Good Tacos!</p>
+            </div>
+            <div id="content2">
+                <div id="container">
+                    <div id="box1">
+                        <h2 class="item-title">$1.99</h2>
+                <p>Tacos</p>
+                    </div>
+                    <div id="box2">
+                        <h2 class="item-title">$3.99</h2>
+                        <p>kombucha</p>
+                    </div>
+                </section>
+                <nav>
+                    <div>
+                        <img src="../assets/tacos.jpg" height="70px" width="70px"> <h1 class="b1">Tacos</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ex placeat pariatur dolor, similique sit
+                        </p></div>
+                    <div><img src="../assets/beer.jpg" height="70px" width="70px">
+                        <h1 class="b1">Beer</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ex placeat pariatur dolor, similique sit
+                        </p></div>
+                    <div> <img src="../assets/wine.jpg" height="70px" width="70px">
+                        <h1 class="b1">Wine</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ex placeat pariatur dolor, similique sit
+                        </p></div>
+                    <div><img src="../assets/music.jpg" height="70px" width="70px">
+                        <h1 class="b1">Music</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ex placeat pariatur dolor, similique sit
+                        </p></div>
+                    
+                </nav>
+                <div id="banner">
+                    <img src="../assets/taacos.jpg" height="350px" width="600px">
+                <div id="detail">
+                    <h1>Featured Taco</h1>
+                    <h3>Slim Profile,easy to hold and loaded with cheese</h3>
+                    <h3>This is one of you waiting for</h3>
+                    <button style="background-color: yellow; padding: 10px;">Learn more -></button>
+                </div>
+                </div>
+               
+                    <div id="name"><h2>Instant Games</h2></div>
+                    <div id="games">
+                       
+                        <div id="img1"></div>
+                        <div id="img2"></div>
+                        <div id="img3"></div>
+                        <div id="img4"></div>
+                        <div id="img5"></div>
+                    </div>
+    </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Assignment1</title>
+    <style>
+        header{
+            text-align: right;
+           padding: 20px;
+            background-color: gray;
+            justify-content: center;
+           
+        }
+        #logo{
+             text-align: left;
+             color: black;
+            
+        }
+        header>div>a{    
+            text-decoration: none;
+            color: black;
+            
+           
+        }
+        header>div>a:hover{
+            background-color: rgb(107, 199, 227);
+            color: white;
+        }
+        section,main{
+                display: inline-block;
+                padding: 5px;
+                margin: 5px;
+                vertical-align: top;
+            }
+            main{
+                margin-left: 40px;
+            }
+            #content{
+                background-color:#bbb;
+                padding:20px;
+                border: 20px;
+                height:400px;
+                width:800px;
+                display:inline-block
+            }
+            #sidebar{
+                background-color:#bbb;
+                padding:20px;
+                border: 20px;
+                height:1200px;
+                width:300px;
+                display:inline-block
+            }
+            
+        #a1{
+        margin-top: 30px;
+        display:inline-block;
+        width: 800px;
+        justify-content: space-evenly;
+        background-color:#ccc;
+     }
+     #a1>div{
+        display: inline-block;
+        padding: 5px;
+        background-color:#aaa ;
+     }
+     div>h3{
+        display: inline-block;
+        text-align: center;
+        padding: 10px;
+     }
+     div>#quote{
+        background-color:gray;
+        margin-top: 50px;
+        text-align: center;
+        padding: 20px;
+     }
+     .detail{
+            /border:1px solid green;/
+            height:100px;
+            margin:5px;
+        }
+        .detail>div{
+            display:inline-block;
+        }
+        .i1{
+            width:70px;
+            /border:1px solid red;/
+            vertical-align: top;
+            margin:5px;
+        }
+        .i2{
+            border-bottom:1px solid black;
+            width:180px;
+            margin:5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo"><img src="../assets/logo.jpg" height="100px" width="100px"></div>
+  <div>
+     <a href="#">Home</a>
+     <a href="#">About us</a>
+     <a href="#">Carrer</a>
+     <a href="#">Contact us</a>
+    </div>        
+    </header>
+    <section>
+        <div id="content">
+         <img src="../assets/steevjob.jpg" height="400px" width="800px"> 
+         <h1 style="text-align:center">“Stay hungry. Stay foolish.” </h1>
+         <div id="a1">
+            <div><h1>Date and year</h1></div>
+             <h3>Event occured at that time</h3>
+        </div>
+        <div id="a1">
+            <div><h1>Date and year</h1></div>
+             <h3>Event occured at that time</h3>
+        </div>
+        <div id="a1">
+            <div><h1>Date and year</h1></div>
+             <h3>Event occured at that time</h3>
+        </div>
+        <div id="a1">
+            <div><h1>Date and year</h1></div>
+            <h3>Event occured at that time</h3>
+        </div>
+        <div id="a1">
+            <div><h1>Date and year</h1></div>
+             <h3>Event occured at that time</h3>
+        </div>
+        <div id="quote"><h2>“ Don’t let the noise of others’ opinions drown out your own inner voice. ”</h2></div>
+        </div>
+        </section>
+        <main>
+         <div id="sidebar">
+            <img src="../assets/steevjob.jpg" height="300px" width="300px">
+            <div class="detail">
+                <div class="i1"><p>Born</p></div>
+                <div class="i2"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p></div>
+            </div>
+            <div class="detail">
+                <div class="i1"><p>Died</p></div>
+                <div class="i2"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p></div>
+            </div>
+            <div class="detail">
+                <div class="i1"><p>Occupation</p></div>
+                <div class="i2"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p></div>
+            </div>
+            <div class="detail">
+                <div class="i1"><p>Parents</p></div>
+                <div class="i2"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p></div>
+            </div>
+         </div>
+        </main>
+</body>
+</html>

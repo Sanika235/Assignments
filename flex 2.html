@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html> 
+ <head> 
+  <title>Flex Assignmment 2</title>
+  <style>
+    body{
+      border: 2px solid;
+    }
+     header{
+       display:flex;
+       justify-content:center;
+       align-items:center;
+       border:1px solid;
+       border-radius:5px;
+       padding:15px;
+       font-size:50px;
+     }  
+     section{
+       border:1px solid;
+       padding:10px;
+       display:flex;
+       
+     }
+     section>div{
+         border:1px solid ;
+         margin:5px;
+         
+     }
+     #sidebar{
+           flex-grow:1;
+           
+     }
+      main{
+           flex-grow:9;
+           padding:5px;
+           display: flex;
+          
+     }
+     nav{
+       border: 1pxx solid;
+     }
+     #sidebar>a{
+            display:block;
+            text-align:center;
+            text-decoration:none;
+            color:black;
+            padding:10px;
+            
+     }
+     .product{
+           border:1px solid ;
+           padding:20px;
+           vertical-align: top;
+          margin: 10px;
+          width:200px;
+           display: flex;
+          text-align: center;
+          flex-direction: column;
+        
+           
+     }
+     
+     .items{
+           border:1px solid;
+          flex-grow: 3;
+          height: 100px;
+           display:flex;
+          margin: 5px;
+           padding: 10px;
+           background-color:#ccc;
+     }
+   </style> 
+ </head> 
+ <body> 
+  <header> 
+   <p>King's Shop</p> 
+  </header> 
+  <section> 
+    <nav>
+   <main> 
+    <div class="product">
+      <div class="items"></div>
+      <div class="items"></div>
+      <div class="items"></div>
+  </div>
+  <div class="product">
+      <div class="items"></div>
+      <div class="items"></div>
+      <div class="items"></div>
+  </div>
+
+  <div class="product">
+    <div class="items"></div>
+    <div class="items"></div>
+    <div class="items"></div>
+</div>
+
+</main> 
+</nav>
+   <div id="sidebar"> <a href="#">Home</a> <a href="#">flavors</a> <a href="#">staff</a> <a href="#">Service</a> 
+   </div> 
+  </section> 
+ </body>
+</html>

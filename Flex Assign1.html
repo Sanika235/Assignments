@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 1 using flex</title>
+    <style>
+         header{
+            background-color:rgb(60, 58, 61);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        #logo{
+             text-align: left;
+             color: black;
+             border: 20px;
+        }
+        header>div>a{
+            padding: 10px;
+            color:black;
+            text-decoration: none;
+        }
+        
+        section{
+       border:1px solid;
+       padding:10px;
+       display:flex;
+       background-color:bisque;
+     }
+     section>div{
+         border:1px solid ;
+         margin:5px;
+          background-color:rgb(203, 231, 154);
+     }
+     #sidebar{
+           flex-grow:1;
+           background-color:rgb(237, 158, 158);
+           margin: 5px;
+           
+     }
+ 
+     nav{   
+        flex-grow:4;
+           padding:5px;
+     }
+     #a1{
+        margin-top: 30px;
+        display:flex;
+        justify-content: space-evenly;
+        flex-grow: 1;
+        background-color: beige;
+     }
+     #a1>div{
+        padding: 5px;
+        background-color:brown ;
+        width: 300px;
+       justify-content: flex-start;
+     }
+     #quote{
+        background-color:gray;
+        margin-top: 50px;
+        text-align: center;
+        padding: 20px;
+     }
+     .detail{
+            
+            height:100px;
+            margin:5px;
+            justify-content: space-between;
+            display: flex;
+            flex-grow: 2;
+        }
+        .detail>div{
+            display:flex;
+            justify-content: space-around;
+            
+        }
+        .i1{
+            width:60px;
+            vertical-align: top;
+            margin:5px;
+        }
+        .i2{
+            border-bottom:1px solid black;
+            width:180px;
+            margin:5px;
+        }  
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="logo"><img src="../assets/logo.jpg"></div>
+
+      <div>
+         <a href="#">Home</a>
+         <a href="#">About us</a>
+         <a href="#">Carrer</a>
+         <a href="#">Contact us</a>
+        </div>        
+        </header>
+        <section> 
+            <nav>
+           <main> 
+            <img src="../assets/steevjob.jpg" height="300px" width="600px">
+            <div id="a1">
+                <div><h1>Date and year</h1></div>
+                 <h3>Event occured at that time</h3>
+            </div>
+            <div id="a1">
+                <div><h1>Date and year</h1></div>
+                 <h3>Event occured at that time</h3>
+            </div>
+            <div id="a1">
+                <div><h1>Date and year</h1></div>
+                 <h3>Event occured at that time</h3>
+            </div>
+            <div id="a1">
+                <div><h1>Date and year</h1></div>
+                 <h3>Event occured at that time</h3>
+            </div>
+            <div id="a1">
+                <div><h1>Date and year</h1></div>
+                 <h3>Event occured at that time</h3>
+            </div>
+            <div id="quote"><h2>“ Don’t let the noise of others’ opinions drown out your own inner voice. ”</h2></div>
+        </main> 
+        </nav>
+           <div id="sidebar"> <img src="../assets/steevjob.jpg" width="350px"> 
+            <div class="detail">
+                <div class="i1"><p>Born</p></div>
+                <div class="i2"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p></div>
+            </div>
+            <div class="detail">
+                <div class="i1"><p>Died</p></div>
+                <div class="i2"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p></div>
+            </div>
+            <div class="detail">
+                <div class="i1"><p>Occupation</p></div>
+                <div class="i2"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p></div>
+            </div>
+            <div class="detail">
+                <div class="i1"><p>Parents</p></div>
+                <div class="i2"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p></div>
+            </div>
+         </div>
+            </div>
+           </div> 
+          </section> 
+
+</body>
+</html>

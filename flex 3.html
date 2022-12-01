@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html> 
+ <head> 
+  <style>
+    nav{
+        border:1px solid;
+        
+    }
+     header{
+       display:flex;
+       justify-content:center;
+       align-items:center;
+       background-color: gray;
+       border:1px solid;
+       border-radius:10px;
+       padding:15px;
+       font-size:50px;
+     }
+    section{
+        display: flex;
+       justify-content:space-evenly;
+        border: 1px solid;
+        background-color: #ccc;
+        
+    }
+    main{
+        border: 1px solid;
+       background-color: #ccc;
+        display: flex;
+        padding: 10px;
+    }
+    #p1{
+        flex-grow: 1;
+        border: 1px solid;
+        text-align: center;
+        background-color: #bbb;
+        margin: 5px;
+    }
+    #p2{
+        padding-top: 10px;
+        flex-grow: 4;
+        border: 1px solid;
+        text-align: center;
+        background-color: #bbb;
+        margin: 5px;
+    }
+    #p3{
+        flex-grow: 1;
+        border: 1px solid;
+        text-align: center;   
+        background-color: #bbb;
+        margin: 5px;
+    }
+    #a1,#a2{
+        border: 1px solid;
+        padding: 5px;
+        margin: 5px;
+        background-color: #aaa;
+       
+    }
+    .item{
+     width: 580px;
+     background-color: slategrey;
+        border: 1px solid;
+        text-align: center;
+        padding:15px;
+        margin: 5px;
+       
+    }
+   </style> 
+ </head> 
+ <body> 
+  <nav> 
+  <header> 
+   <p>S S Electronics</p> 
+  </header> 
+  <section>
+      <div id="p1"><img src="../assets/i1.jpg" ></div>
+      <div id="p2"><img src="../assets/i2.jpg"></div>
+      <div id="p3"><img src="../assets/i3.jpg"></div>
+  </section>
+  <main>
+     <div id="a1">
+           <div class="item">Laptop</div>
+           <div class="item">Mobiles</div>
+           <div class="item">television</div>
+     </div>
+     <div id="a2">
+        <div class="item">Headphones</div>
+        <div class="item">Computers</div>
+        <div class="item">Bluetooth</div>
+     </div>
+  </main> 
+ </nav>
+ </body>
+</html>

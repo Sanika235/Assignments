@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flex Assignment 1</title>
+       <style>
+        body{
+            border: 2px solid;
+            padding: 5px;
+        }
+          header{
+       display:flex;
+       justify-content:center;
+       align-items:center;
+       border:1px solid;
+       border-radius:5px;
+       padding:20px;
+       background-color:gray;
+       color:white;
+       font-size:30px;
+     }  
+     section{
+       border:1px solid ;
+       padding:5px;
+       display:flex;
+     }
+     section>div{
+         border:1px solid;
+         margin:5px;
+     }
+     #sidebar{
+           flex-grow:1;
+           background-color:#aaa;
+     }
+     #main{
+        flex-grow: 6;
+        padding: 5px;
+        border: 2px solid;
+        
+     }
+     #sidebar>a{
+            display:block;
+            text-align:center;
+            text-decoration:none;
+            color:black;
+            padding:10px;     
+     }
+    .product{
+        border: 1px solid;
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+        height: 200px;
+    }
+     .items{
+       height:200px;
+       width:200px;
+       border: 1px solid;
+     }
+       </style>
+    </head>
+    <body>
+        <header>
+            <p>Header</p>
+        </header>
+        <section>
+            <div id="sidebar">
+                <a href="#">Home</a>
+                <a href="#">flavors</a> 
+                <a href="#">staff</a>
+                 <a href="#">Service</a> 
+            </div>
+            <div id="main">
+                <div class="product">
+                    <div class="items"></div>
+                    <div class="items"></div>
+                    <div class="items"></div>
+                </div>
+                <div class="product">
+                    <div class="items"></div>
+                    <div class="items"></div>
+                    <div class="items"></div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html

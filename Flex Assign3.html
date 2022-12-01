@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 3 using flex</title>
+        <style>
+           
+            header{
+                border: 1px solid;
+                display: flex;
+                justify-content: space-evenly;
+                background-image:url('../assets/beach.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            header>div{
+                text-align: center;
+                border: 1px solid;
+                background-color: rgb(112, 157, 233);
+                width: 100px;
+                padding: 10px;
+                margin: 10px;
+                background-image: url('../assets/s.jpg');
+                color: white;
+            }
+           
+            section{
+           display: flex;
+           justify-content: space-around;
+           text-align: center;
+           margin: 2px;
+           background-color:gray;
+        }
+       
+       #content{
+        flex-grow: 3;
+        height: 400;
+       
+        background-image: url('../assets/hotel.jpg');
+        background-size: cover;
+        color:aliceblue;
+        background-repeat: no-repeat;
+       }
+       #content2{
+        margin:5px;
+        flex-grow: 2;
+       }
+       #container{
+        display: flex;
+        flex-direction: column;
+       height: 300px;
+       }
+       #box1{
+        flex-grow: 3;
+        background-image: url('../assets/b2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-bottom: 5px;
+        color: white;
+       }
+       #box2{
+        flex-grow: 3;
+        background-image: url('../assets/b1.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-bottom: 5px;
+        color: white;
+       }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            background-color: gray;
+            
+        }
+        nav>div{
+           border: 1px solid;
+           margin: 5px;
+           text-align: center;
+           background-image: url(../assets/bg.pg.jpg);
+        }
+        nav>div:hover{
+            background-color: rgb(102, 100, 100);
+            color: white;
+        }
+        main{
+               
+               display: flex;
+              
+               justify-content: space-between;
+               flex-grow: 1;
+               background-color: gray;
+               margin-bottom: 10px;
+            }
+       
+            main>div{
+               justify-content:space-around ;
+               background-color: rgb(241, 151, 182);
+               padding: 10px;
+               margin: 10px;
+              
+            }
+       
+        #text{
+            vertical-align: top;
+            text-align: center;
+            background-image: url('../assets/re.jpg');
+            background-repeat: no-repeat;
+            color: white;
+            background-size: cover;
+            height: 300px;
+            width: 650px;
+        }
+        #img{
+            background-image: url('../assets/hotel7.jpg');
+            background-size: cover;
+           
+            background-repeat: no-repeat;
+            height: 300px;
+            width: 650px;
+           
+        }
+       #name{
+        text-align: center;
+        padding:10px;
+        background-color: gray;
+       }
+        #games{
+            text-align: center;
+            background-color: gray;
+           padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            flex-grow: 5;
+            flex-direction:row;
+            
+            
+        }
+       
+        #games>div{
+           height: 150px;
+           width:200px;
+            
+        }
+        #img1{
+            background-image: url('../assets/f1.jpg');
+           
+            background-repeat: no-repeat;
+        }
+        #img2{
+            background-image: url('../assets/f3.jpg');
+           
+            background-repeat: no-repeat;
+        }
+        #img3{
+            background-image: url('../assets/f2.jpg');
+            ;
+            background-repeat: no-repeat;
+        }
+        #img4{
+            background-image: url('../assets/f4.jpg');
+            
+            background-repeat: no-repeat;
+        }
+        #img5{
+            background-image: url('../assets/f5.jpg');
+            
+            background-repeat: no-repeat;
+        }
+        footer>div{
+            justify-content:space-around ;
+                
+                background-color: black;
+        }
+        footer{
+          
+            display: flex;
+             
+        }
+        .logo{
+            vertical-align: top;
+            width:300px;
+            padding: 10px;
+            background-image: url(../assets/pizza.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .end{
+           flex-grow: 2;
+           color: aliceblue;
+
+           padding:30px;
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div>Tacos</div>
+            <div>Beers</div>
+            <div>Wines</div>
+            <div>Deserts</div>
+            <div>Reservations</div>
+        </header>
+        <section>
+            <div id="content">
+                <h1 class="title">Surya Hotel</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ex placeat pariatur dolor, similique sit
+                    </p>
+            </div>
+            <div id="content2">
+                <div id="container">
+                    <div id="box1">
+                        <h1 class="item-title">$1.99</h1>
+                <p>Tacos</p>
+                    </div>
+                    <div id="box2">
+                        <h1 class="item-title">$1.99</h1>
+                        <p>Tacos</p>
+                    </div>
+                </section>
+    <nav>
+        <div> <h1 class="b1">Tacos</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ex placeat pariatur dolor, similique sit
+            </p></div>
+        <div><h1 class="b1">Beer</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ex placeat pariatur dolor, similique sit
+            </p></div>
+        <div> <h1 class="b1">Wine</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ex placeat pariatur dolor, similique sit
+            </p></div>
+        <div><h1 class="b1">Pizza</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ex placeat pariatur dolor, similique sit
+            </p></div>
+        <div><h1 class="b1">Burger</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ex placeat pariatur dolor, similiq
+            </p></div>
+    </nav>
+    <main>
+        <div id="img">
+            
+            </div>
+            <div id="text">
+                <h1>Relax Your Soul!</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur at quo fugit inventore. Eveniet impedit non laudantium numquam. Quas doloribus quod ducimus earum adipisci accusamus quos, sit libero quasi molestias.</p>
+                <form>
+                    <input class="btn" type="button" value="Read more">
+                    </form>
+            </div>
+    </main>
+    <div id="name"><h2>Instant Games</h2></div>
+    <div id="games">
+       
+        <div id="img1"></div>
+        <div id="img2"></div>
+        <div id="img3"></div>
+        <div id="img4"></div>
+        <div id="img5"></div>
+    </div>
+    <footer>
+        <div class="end">
+            <div>Tacos</div>
+            <div>Beer</div>
+            <div>Desserts</div>
+            <div>Reservations</div>
+        </div>
+        <div class="logo">
+
+        </div>
+    </footer>
+    </body>
+</html>
